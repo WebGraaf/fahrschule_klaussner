@@ -32,8 +32,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const isHomePage = currentPath === '/';
-  const headerBg = isScrolled || !isHomePage ? 'bg-[#2563EB] shadow-lg' : 'bg-transparent';
+  const headerBg = 'bg-[#2563EB] shadow-lg';
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
@@ -46,7 +45,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
               <GraduationCap className="w-7 h-7 text-[#2563EB]" />
             </div>
-            <span className="text-white text-xl font-bold hidden sm:block">
+            <span className="text-white text-lg sm:text-xl font-bold">
               Fahrschule Klaussner
             </span>
           </button>

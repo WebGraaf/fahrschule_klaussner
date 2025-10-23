@@ -89,27 +89,32 @@ export default function Home({ onNavigate }: HomeProps) {
 
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-br from-[#2563EB] via-[#1E40AF] to-[#1D4ED8] text-white pt-32 pb-20 overflow-hidden">
+      <section className="relative bg-white text-black pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              Sicher fahren lernen – mit persönlicher Betreuung in Waldbröl & Nümbrecht
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Von A bis L: Begleitung zum Führerschein, Seminare & Auffrischungskurse
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button onClick={() => onNavigate('/anmelden')} className="btn-solid bg-white text-[#2563EB] hover:bg-gray-100">
-                Jetzt anmelden
-              </button>
-              <button onClick={() => onNavigate('/fuehrerscheine')} className="btn-outline border-white text-white hover:bg-white/10">
-                Klassen entdecken
-              </button>
+          <div className="grid lg:grid-cols-10 gap-8 items-center max-w-7xl mx-auto">
+            <div className="lg:col-span-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black">
+                Sicher fahren lernen – mit persönlicher Betreuung in Waldbröl & Nümbrecht
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-gray-600">
+                Von A bis L: Begleitung zum Führerschein, Seminare & Auffrischungskurse
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button onClick={() => onNavigate('/anmelden')} className="btn-solid bg-[#2563EB] text-white hover:bg-[#1E40AF]">
+                  Jetzt anmelden
+                </button>
+                <button onClick={() => onNavigate('/fuehrerscheine')} className="btn-outline border-[#2563EB] text-[#2563EB] hover:bg-[#2563EB] hover:text-white">
+                  Klassen entdecken
+                </button>
+              </div>
+            </div>
+            <div className="lg:col-span-4 flex justify-center">
+              <img src="/images/Logo_Fahrschule_Frank.jpg" alt="Fahrschule Logo" className="w-full max-w-md h-auto" />
             </div>
           </div>
         </div>

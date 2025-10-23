@@ -116,11 +116,7 @@ export default function UeberUns({ onNavigate }: UeberUnsProps) {
             <div className="grid md:grid-cols-2 gap-8">
               {team.map((person, index) => (
                 <div key={index} className="bg-[#EFF6FF] rounded-xl p-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-[#60A5FA] to-[#2563EB] rounded-full flex items-center justify-center mb-6">
-                    <span className="text-3xl font-bold text-white">
-                      {person.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
+                  <img src={`/images/${person.name}.jpg`} alt={person.name} className="w-40 h-40 rounded-full object-cover mb-6" />
                   <h3 className="text-2xl font-bold mb-2">{person.name}</h3>
                   <p className="text-[#2563EB] font-semibold mb-4">{person.rolle}</p>
                   <p className="text-[#6B7280]">{person.beschreibung}</p>
