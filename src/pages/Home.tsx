@@ -99,10 +99,10 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid lg:grid-cols-10 gap-8 items-center max-w-7xl mx-auto">
             <div className="lg:col-span-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black">
-                Sicher fahren lernen – mit persönlicher Betreuung in Waldbröl & Nümbrecht
+                Wir bringen dich auf die Straße!
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-600">
-                Von A bis L: Begleitung zum Führerschein, Seminare & Auffrischungskurse
+                Fahrschule Frank Klaussner
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button onClick={() => onNavigate('/anmelden')} className="btn-solid bg-[#2563EB] text-white hover:bg-[#1E40AF]">
