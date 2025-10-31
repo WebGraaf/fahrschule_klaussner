@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from './LayoutComponents';
-import logo from '../default_images/logo_default.webp';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -78,7 +77,7 @@ const Header: React.FC = () => {
           <div className="relative flex items-center justify-center md:justify-between">
             {/* Logo */}
             <Link to="/" onClick={closeMenus}>
-              <img src={logo} alt="Führerschein Website" className="h-12 w-auto" />
+              <img src="/default_images/logo_default.webp" alt="Führerschein Website" className="h-12 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}

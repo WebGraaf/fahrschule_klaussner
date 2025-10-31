@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown, Calendar, Check, AlertCircle, Loader2 } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import logo from '../default_images/logo_default.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 interface SelectProps {
@@ -470,7 +469,7 @@ export const AnmeldeFormular: React.FC = () => {
                 <fieldset className="space-y-4">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-lg font-semibold text-heading">Persönliche Informationen</h3>
-                    <img ref={logoRef} src={logo} alt="Logo" className="h-16 w-auto" />
+                    <img ref={logoRef} src="/default_images/logo_default.webp" alt="Logo" className="h-16 w-auto" />
                   </div>
                   <div ref={(el) => el && (fieldsRef.current[0] = el)}>
                     <Input label="Vorname" placeholder="Max" required error="Vorname ist erforderlich" />

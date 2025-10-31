@@ -3,7 +3,6 @@ import { Container, Section } from '../components/LayoutComponents';
 import { KlassenDetailCard } from '../components/KlassenDetailCard';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { Truck, Cog, Leaf } from 'lucide-react';
-import KlasseLImage from '../default_images/Klasse_L_Default.webp';
 
 const KlasseL: React.FC = () => {
   useEffect(() => {
@@ -49,7 +48,7 @@ const KlasseL: React.FC = () => {
       <Section background="page-bg" padding="lg">
         <Container>
           <KlassenDetailCard
-            imageSrc={KlasseLImage}
+            imageSrc="/default_images/Klasse_L_Default.webp"
             imageAlt="Klasse L - Basisklasse für Land- und Forstwirtschaft"
             title="Klasse L"
             description="Basisklasse für Land- und Forstwirtschaft. Du darfst langsame Traktoren sowie bestimmte Arbeitsmaschinen im Straßenverkehr bewegen – ideal für Hof, Feld und Kurzstrecken."

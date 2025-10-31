@@ -2,10 +2,6 @@ import React, { useEffect } from 'react';
 import { Container, Section } from '../components/LayoutComponents';
 import { TeamBilder } from '../components/TeamBilder';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import LogoDefault from '../default_images/logo_default.webp';
-import PlatzhalterGruppenbildTeam from '../default_images/Platzhalter_Gruppenbild_Team.webp';
-import PlatzhalterFahrschule from '../default_images/Platzhalter_Fahrschule.webp';
-import PlatzhalterTeammitglied from '../default_images/Platzhalter_Teammitglied.webp';
 
 const SplitMediaTextCopy: React.FC<{
   imageSrc: string;
@@ -140,7 +136,7 @@ const UeberUns: React.FC = () => {
       <Section background="page-bg" padding="lg">
         <Container>
           <SplitMediaTextCopy
-            imageSrc={LogoDefault}
+            imageSrc="/default_images/logo_default.webp"
             imageAlt="Unsere Mission"
             title="Unsere Mission"
             description="Wir glauben daran, dass jeder das Recht hat, mobil und unabhängig zu sein. Deshalb setzen wir auf eine individuelle, geduldige und moderne Ausbildung. Egal ob jung oder alt, Anfänger oder Umsteiger - bei uns bist du in guten Händen. Deine Sicherheit und dein Erfolg stehen für uns an erster Stelle."

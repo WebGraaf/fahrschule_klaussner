@@ -3,7 +3,6 @@ import { Container, Section } from '../components/LayoutComponents';
 import { Kontaktinformationen } from '../components/Kontaktinformationen';
 import { StandorteUebersicht } from '../components/StandorteUebersicht';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import LogoDefault from '../default_images/logo_default.webp';
 
 const BannerAnmeldenCopy: React.FC = () => {
   const { elementRef, isVisible } = useScrollReveal();
@@ -39,7 +38,7 @@ const BannerAnmeldenCopy: React.FC = () => {
             </div>
             <div className="flex-shrink-0 lg:w-3/10 flex justify-center">
               <img
-                src={LogoDefault}
+                src="/default_images/logo_default.webp"
                 alt="Logo"
                 className="max-w-full h-auto max-h-32"
               />

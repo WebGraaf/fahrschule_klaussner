@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import LogoDefault from '../default_images/logo_default.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -123,7 +122,7 @@ const BannerAnmelden: React.FC = () => {
             <div className="flex-shrink-0 lg:w-3/10 flex justify-center">
               <img
                 ref={logoRef}
-                src={LogoDefault}
+                src="/default_images/logo_default.webp"
                 alt="Logo"
                 className="max-w-full h-auto max-h-32"
               />

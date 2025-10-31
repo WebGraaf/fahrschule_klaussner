@@ -114,7 +114,7 @@ const Home: React.FC = () => {
         description="Erfahren Sie mehr über unsere Fahrschulausbildung in Waldbröl und Nümbrecht. Wir bieten umfassende und kompetente Beratung und bemühen uns, die Kosten so gering wie möglich zu halten."
         buttonText="Jetzt anmelden"
         buttonLink="/anmelden"
-        logoSrc="/src/default_images/logo_default.webp"
+        logoSrc="/default_images/logo_default.webp"
         logoAlt="Fahrschule Logo"
       />
 

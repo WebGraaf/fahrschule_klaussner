@@ -3,8 +3,6 @@ import { Container, Section } from '../components/LayoutComponents';
 import { KlassenDetailCard } from '../components/KlassenDetailCard';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { Car, Scale, Users, Truck, Link, CheckCircle, User, FileText, Calendar, BookOpen, Key, Settings, Cog } from 'lucide-react';
-import KlasseBImage from '../default_images/Klasse_B_Default.webp';
-import KlasseBEImage from '../default_images/Klasse_BE_Default.webp';
 
 const KlasseB: React.FC = () => {
   useEffect(() => {
@@ -50,7 +48,7 @@ const KlasseB: React.FC = () => {
       <Section background="page-bg" padding="lg">
         <Container>
           <KlassenDetailCard
-            imageSrc={KlasseBImage}
+            imageSrc="/default_images/Klasse_B_Default.webp"
             imageAlt="Klasse B - Standard-Pkw-Führerschein"
             title="Klasse B"
             description="Der Standard-Pkw-Führerschein. Du darfst Pkw und leichte Transporter bis 3.500 kg zGG fahren – mit bis zu 8 Sitzplätzen zusätzlich zum Fahrer. Ideal für Alltag, Job und Urlaub."
@@ -98,7 +96,7 @@ const KlasseB: React.FC = () => {
       <Section background="page-bg" padding="lg">
         <Container>
           <KlassenDetailCard
-            imageSrc={KlasseBEImage}
+            imageSrc="/default_images/Klasse_BE_Default.webp"
             imageAlt="Klasse BE - Erweiterung für große Anhänger"
             title="Klasse BE"
             description="Erweiterung zu B für große Anhänger. Ideal für Wohnwagen, Pferde- oder schwere Kastenanhänger."

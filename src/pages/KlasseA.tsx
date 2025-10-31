@@ -3,9 +3,6 @@ import { Container, Section } from '../components/LayoutComponents';
 import { KlassenDetailCard } from '../components/KlassenDetailCard';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { Bike, Gauge, Calendar, Users } from 'lucide-react';
-import KlasseA1Image from '../default_images/Klasse_A1_Default.webp';
-import KlasseA2Image from '../default_images/Klasse_A2_Default.webp';
-import KlasseAImage from '../default_images/Klasse_A_Default.webp';
 
 const KlasseA: React.FC = () => {
   useEffect(() => {
@@ -52,7 +49,7 @@ const KlasseA: React.FC = () => {
       <Section background="page-bg" padding="lg">
         <Container>
           <KlassenDetailCard
-            imageSrc={KlasseA1Image}
+            imageSrc="/default_images/Klasse_A1_Default.webp"
             imageAlt="Klasse A1 - Leichtkrafträder"
             title="Klasse A1"
             description="Mehr Leistung, mehr Möglichkeiten! Die Klasse A1 berechtigt zum Fahren von Leichtkrafträdern bis 125 ccm und 15 PS. Ab 16 Jahren kannst du mit dieser Klasse bereits richtige Motorräder erleben."
@@ -101,7 +98,7 @@ const KlasseA: React.FC = () => {
       <Section background="page-bg" padding="lg">
         <Container>
           <KlassenDetailCard
-            imageSrc={KlasseA2Image}
+            imageSrc="/default_images/Klasse_A2_Default.webp"
             imageAlt="Klasse A2 - Mittelklasse Motorräder"
             title="Klasse A2"
             description="Der perfekte Mittelweg! Mit der Klasse A2 steuerst du Motorräder bis 48 PS. Diese Klasse bietet dir echtes Motorradfeeling und ist der ideale Schritt auf dem Weg zur vollen Motorradlizenz. Ab 18 Jahren möglich."
@@ -150,7 +147,7 @@ const KlasseA: React.FC = () => {
       <Section background="page-bg" padding="lg">
         <Container>
           <KlassenDetailCard
-            imageSrc={KlasseAImage}
+            imageSrc="/default_images/Klasse_A_Default.webp"
             imageAlt="Klasse A - Unbegrenzte Motorräder"
             title="Klasse A"
             description="Die Königsklasse! Mit der Klasse A darfst du alle Motorräder ohne Leistungsbeschränkung fahren. Volle Freiheit, maximale Power – für echte Motorradfans ab 24 Jahren oder nach 2 Jahren Vorbesitz der Klasse A2."
