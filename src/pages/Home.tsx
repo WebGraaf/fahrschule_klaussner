@@ -161,7 +161,7 @@ const Home: React.FC = () => {
 
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <SplitMediaTextInvert
-          imageSrc="/kunde_bilder_download/auto1.webp"
+          imageSrc="/kunde_bilder_download/Auto1.webp"
           imageAlt="Moderner Fuhrpark"
           title="Topmoderner Fuhrpark"
           description="Unser Fahrzeugpark umfasst die neuesten Modelle verschiedener Automarken. Alle Fahrzeuge sind perfekt gewartet und erfüllen höchste Sicherheitsstandards für Ihre optimale Ausbildung."
